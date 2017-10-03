@@ -21,10 +21,12 @@ app.use((req, res, next) => {
 
 // app.use((req, res, next) => {
 //     res.render('maintenance.hbs', {
-//     maintenanceMessage: 'Site is currently under maintenance.',
+//     maintenanceMessage: 'Site is currently being updated.',
 //     pageTitle: 'Maintenance Page'
 //    });
 // });
+
+// app.use is for using middleware (middleware is like 3rd party software. kinda. not exactly tho)
 
 app.use(express.static(__dirname + '/public'));
 
